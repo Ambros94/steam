@@ -4,11 +4,11 @@ import sys
 if not sys.version_info[0] == 3 and sys.version_info[1] < 5:
     sys.exit('Python < 3.5 is not supported')
 
-version = '0.74'
+version = '0.74.1'
 
 setup(
-    name='pysteam',
-    packages=['pysteam', 'test', 'examples', ],
+    name='pepper-steam',
+    packages=['steampy', 'test', 'examples', ],
     version=version,
     description='A Steam lib for trade automation',
     author='Luca Ambrosini',

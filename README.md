@@ -48,7 +48,7 @@ Usage
 [Obtaining SteamGuard using Android emulation]( https://github.com/codepath/android_guides/wiki/Genymotion-2.0-Emulators-with-Google-Play-support)
 
 ```python
-from pysteam.client import SteamClient
+from steampy.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -94,7 +94,7 @@ Unless specified in documentation, the method does not require login to work(it 
 Log into the steam account. Allows to accept trade offers and some other methods.
 
 ```python
-from pysteam.client import SteamClient
+from steampy.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -115,7 +115,7 @@ Using `SteamClient.login` method is required before usage
 Logout from steam.
 
 ```python
-from pysteam.client import SteamClient
+from steampy.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -138,7 +138,7 @@ Check if session is alive. This method fetches main page and check
 if user name is there. Thanks for vasia123 for this solution.
 
 ```python
-from pysteam.client import SteamClient
+from steampy.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -154,7 +154,7 @@ Directly call api method from the steam api services.
 [Unofficial but more elegant](https://lab.xpaw.me/steam_api_documentation.html)
 
 ```python
-from pysteam.client import SteamClient
+from steampy.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 params = {'key': 'MY_API_KEY'}
@@ -197,8 +197,8 @@ This method works when partner is your friend or steam.
 In returned dict there will be trade offer id by the key `tradeofferid`.
 
 ```python
-from pysteam.client import SteamClient, Asset
-from pysteam.utils import GameOptions
+from steampy.client import SteamClient, Asset
+from steampy.utils import GameOptions
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')

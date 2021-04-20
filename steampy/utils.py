@@ -10,7 +10,7 @@ from typing import List
 
 from bs4 import BeautifulSoup, Tag
 
-from pysteam.models import GameOptions
+from steampy.models import GameOptions
 
 
 def text_between(text: str, begin: str, end: str) -> str:

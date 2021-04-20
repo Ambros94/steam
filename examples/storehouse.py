@@ -1,5 +1,5 @@
 import time
-from pysteam.client import SteamClient, TradeOfferState
+from steampy.client import SteamClient, TradeOfferState
 
 # Set API key
 api_key = ''

@@ -2,10 +2,10 @@ import os
 
 from unittest import TestCase
 
-from pysteam.client import SteamClient
-from pysteam.exceptions import TooManyRequests
-from pysteam.models import GameOptions, Currency
-from pysteam.utils import load_credentials
+from steampy.client import SteamClient
+from steampy.exceptions import TooManyRequests
+from steampy.models import GameOptions, Currency
+from steampy.utils import load_credentials
 
 
 class TestMarket(TestCase):

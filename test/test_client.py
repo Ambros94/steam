@@ -3,10 +3,10 @@ import os
 
 from unittest import TestCase
 
-from pysteam.client import SteamClient
-from pysteam.exceptions import LoginRequired
-from pysteam.models import GameOptions, Asset
-from pysteam.utils import account_id_to_steam_id, load_credentials
+from steampy.client import SteamClient
+from steampy.exceptions import LoginRequired
+from steampy.models import GameOptions, Asset
+from steampy.utils import account_id_to_steam_id, load_credentials
 
 
 class TestSteamClient(TestCase):
