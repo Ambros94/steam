@@ -7,8 +7,8 @@ if not sys.version_info[0] == 3 and sys.version_info[1] < 5:
 version = '0.74'
 
 setup(
-    name='steampy',
-    packages=['steampy', 'test', 'examples', ],
+    name='pysteam',
+    packages=['pysteam', 'test', 'examples', ],
     version=version,
     description='A Steam lib for trade automation',
     author='Michał Bukowski',
