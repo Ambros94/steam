@@ -1,10 +1,10 @@
 import base64
 import time
 import requests
-from steampy import guard
+from pysteam import guard
 import rsa
-from steampy.models import SteamUrl
-from steampy.exceptions import InvalidCredentials, CaptchaRequired
+from pysteam.models import SteamUrl
+from pysteam.exceptions import InvalidCredentials, CaptchaRequired
 
 
 class LoginExecutor:

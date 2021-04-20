@@ -6,14 +6,14 @@ from typing import List, Union
 
 import json
 import requests
-from steampy import guard
-from steampy.chat import SteamChat
-from steampy.confirmation import ConfirmationExecutor
-from steampy.exceptions import SevenDaysHoldException, LoginRequired, ApiException
-from steampy.login import LoginExecutor, InvalidCredentials
-from steampy.market import SteamMarket
-from steampy.models import Asset, TradeOfferState, SteamUrl, GameOptions
-from steampy.utils import text_between, texts_between, merge_items_with_descriptions_from_inventory, \
+from pysteam import guard
+from pysteam.chat import SteamChat
+from pysteam.confirmation import ConfirmationExecutor
+from pysteam.exceptions import SevenDaysHoldException, LoginRequired, ApiException
+from pysteam.login import LoginExecutor, InvalidCredentials
+from pysteam.market import SteamMarket
+from pysteam.models import Asset, TradeOfferState, SteamUrl, GameOptions
+from pysteam.utils import text_between, texts_between, merge_items_with_descriptions_from_inventory, \
     steam_id_to_account_id, merge_items_with_descriptions_from_offers, get_description_key, \
     merge_items_with_descriptions_from_offer, account_id_to_steam_id, get_key_value_from_url, parse_price
 

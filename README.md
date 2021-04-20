@@ -2,7 +2,7 @@ Steam Trade Offers Client for Python
 =======
 
 [![PayPal Donate Button](https://img.shields.io/badge/donate-paypal-orange.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XC8BMJ8QRD9ZY "Donate to this project via PayPal")
-[![Bitcoin Donate Button](https://img.shields.io/badge/donate-bitcoin-orange.svg)](https://blockchain.info/payment_request?address=3FCe4D73J7tJ1zH2Q8NM3xnEeLsevvX3jR&message=Development+of+steampy&amount_local=12&currency=USD&nosavecurrency=true "Donate to this project via Bitcoin")
+[![Bitcoin Donate Button](https://img.shields.io/badge/donate-bitcoin-orange.svg)](https://blockchain.info/payment_request?address=3FCe4D73J7tJ1zH2Q8NM3xnEeLsevvX3jR&message=Development+of+pysteam&amount_local=12&currency=USD&nosavecurrency=true "Donate to this project via Bitcoin")
 
 `pysteam` is a library for Python, inspired by node-steam-tradeoffers, node-steam and other libraries for Node.js.
 It was designed as a simple lightweight library, combining features of many steam libraries from Node.js into a single python module.
@@ -13,23 +13,23 @@ and SteamGuard file(no need to extract and pass sessionID and webCookie).
 Table of Content
 ================
 
-* [Installation](https://github.com/bukson/steampy#installation)
+* [Installation](https://github.com/Ambros94/pysteam#installation)
 
-* [Usage](https://github.com/bukson/steampy#usage)
+* [Usage](https://github.com/Ambros94/pysteam#usage)
 
-* [Examples](https://github.com/bukson/steampy#examples)
+* [Examples](https://github.com/Ambros94/pysteam#examples)
 
-* [SteamClient methods](https://github.com/bukson/steampy#steamclient-methods)
+* [SteamClient methods](https://github.com/Ambros94/pysteam#steamclient-methods)
 
-* [Market methods](https://github.com/bukson/steampy#market-methods)
+* [Market methods](https://github.com/Ambros94/pysteam#market-methods)
 
-* [Guard module functions](https://github.com/bukson/steampy#guard-module-functions)
+* [Guard module functions](https://github.com/Ambros94/pysteam#guard-module-functions)
 
-* [SteamChat methods](https://github.com/bukson/steampy#steamchat-methods)
+* [SteamChat methods](https://github.com/Ambros94/pysteam#steamchat-methods)
 
-* [Test](https://github.com/bukson/steampy#test)
+* [Test](https://github.com/Ambros94/pysteam#test)
 
-* [License](https://github.com/bukson/steampy#license)
+* [License](https://github.com/Ambros94/pysteam#license)
 
 
 Installation
@@ -94,7 +94,7 @@ Unless specified in documentation, the method does not require login to work(it 
 Log into the steam account. Allows to accept trade offers and some other methods.
 
 ```python
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -115,7 +115,7 @@ Using `SteamClient.login` method is required before usage
 Logout from steam.
 
 ```python
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -138,7 +138,7 @@ Check if session is alive. This method fetches main page and check
 if user name is there. Thanks for vasia123 for this solution.
 
 ```python
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -154,7 +154,7 @@ Directly call api method from the steam api services.
 [Unofficial but more elegant](https://lab.xpaw.me/steam_api_documentation.html)
 
 ```python
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 params = {'key': 'MY_API_KEY'}
@@ -197,8 +197,8 @@ This method works when partner is your friend or steam.
 In returned dict there will be trade offer id by the key `tradeofferid`.
 
 ```python
-from steampy.client import SteamClient, Asset
-from steampy.utils import GameOptions
+from pysteam.client import SteamClient, Asset
+from pysteam.utils import GameOptions
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -568,7 +568,7 @@ License
 
 MIT License
 
-Copyright (c) 2016 [Michał Bukowski](gigibukson@gmail.com)
+Copyright (c) 2021 [Luca Ambrosini](luca.ambro94@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

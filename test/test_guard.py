@@ -1,8 +1,8 @@
 import base64
 from unittest import TestCase
 
-from steampy import guard
-from steampy.confirmation import Tag
+from pysteam import guard
+from pysteam.confirmation import Tag
 
 
 class TestGuard(TestCase):

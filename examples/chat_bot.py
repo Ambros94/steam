@@ -1,5 +1,5 @@
 import time
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 # Set API key
 api_key = ''
