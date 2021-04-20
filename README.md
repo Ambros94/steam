@@ -4,11 +4,11 @@ Steam Trade Offers Client for Python
 [![PayPal Donate Button](https://img.shields.io/badge/donate-paypal-orange.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XC8BMJ8QRD9ZY "Donate to this project via PayPal")
 [![Bitcoin Donate Button](https://img.shields.io/badge/donate-bitcoin-orange.svg)](https://blockchain.info/payment_request?address=3FCe4D73J7tJ1zH2Q8NM3xnEeLsevvX3jR&message=Development+of+steampy&amount_local=12&currency=USD&nosavecurrency=true "Donate to this project via Bitcoin")
 
-`steampy` is a library for Python, inspired by node-steam-tradeoffers, node-steam and other libraries for Node.js.
+`pysteam` is a library for Python, inspired by node-steam-tradeoffers, node-steam and other libraries for Node.js.
 It was designed as a simple lightweight library, combining features of many steam libraries from Node.js into a single python module.
-`steampy` is capable of logging into steam, fetching trade offers and handling them in simple manner, using steam user credentials
+`pysteam` is capable of logging into steam, fetching trade offers and handling them in simple manner, using steam user credentials
 and SteamGuard file(no need to extract and pass sessionID and webCookie).
-`steampy` is developed with Python 3 using type hints and many other features its supported for Windows, Linux and MacOs.
+`pysteam` is developed with Python 3 using type hints and many other features its supported for Windows, Linux and MacOs.
 
 Table of Content
 ================
@@ -36,7 +36,7 @@ Installation
 ============
 
 ```
-pip install steampy
+pip install pysteam
 ```
 
 Usage
@@ -48,7 +48,7 @@ Usage
 [Obtaining SteamGuard using Android emulation]( https://github.com/codepath/android_guides/wiki/Genymotion-2.0-Emulators-with-Google-Play-support)
 
 ```python
-from steampy.client import SteamClient
+from pysteam.client import SteamClient
 
 steam_client = SteamClient('MY_API_KEY')
 steam_client.login('MY_USERNAME', 'MY_PASSWORD', 'PATH_TO_STEAMGUARD_FILE')
@@ -74,7 +74,7 @@ The `storehouse.py` file contains an example of handling incoming trade offers.
 python storehouse.py
 ```
 
-If you want to generate authentication codes and use steampy as steam desktop authenticator
+If you want to generate authentication codes and use pysteam as steam desktop authenticator
 then fill required secrets in `desktop_authenticator.py` file.
 The `desktop_authenticator.py` file contains examples of generating such one time codes/
 
